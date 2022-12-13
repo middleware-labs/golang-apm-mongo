@@ -1,9 +1,10 @@
 package mongo
 
 import (
-	"go.opentelemetry.io/contrib/instrumentation/go.mongodb.org/mongo-driver/mongo/otelmongo"
+     "go.mongodb.org/mongo-driver/event"
+	 "go.opentelemetry.io/contrib/instrumentation/go.mongodb.org/mongo-driver/mongo/otelmongo"
 )
 
-func NewMonitor() {
-	otelmongo.NewMonitor()
+func NewMonitor() *event.CommandMonitor{
+	return otelmongo.NewMonitor()
 }
