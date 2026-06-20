@@ -5,7 +5,7 @@ go 1.22
 toolchain go1.23.1
 
 require (
-	go.mongodb.org/mongo-driver v1.16.1
+	go.mongodb.org/mongo-driver v1.17.7
 	go.opentelemetry.io/contrib/instrumentation/go.mongodb.org/mongo-driver/mongo/otelmongo v0.55.0
 )
 
